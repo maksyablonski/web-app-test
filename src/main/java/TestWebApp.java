@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 public class TestWebApp extends HttpServlet {
 
     protected void doPost(HttpServletRequest request,
-                          HttpServletResponse response) throws ServletException, IOException {
+                          HttpServletResponse response) throws  IOException {
 
         String login = request.getParameter("login");
         String email = request.getParameter("email");
@@ -26,9 +26,10 @@ public class TestWebApp extends HttpServlet {
         printWriter.print("</body>");
         printWriter.print("</html>");
         printWriter.close();
-
+////test web app login git
         System.out.println("login: " + login);
         System.out.println("emailId: " + email);
+        System.out.println();
 
     }
 }
