@@ -15,7 +15,7 @@ public class TestWebApp extends HttpServlet {
         String login = request.getParameter("login");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-
+    ////git test
         response.setContentType("text/html");
         PrintWriter printWriter = response.getWriter();
         printWriter.print("<html>");
